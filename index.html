@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="h-auto">
+    <!-- header -->
+    <header class="relative">
+      <nav
+        class=" lg:w-full lg:h-[60px] lg:bg-gradient-to-r lg:from-[#3A9ADE] lg:to-[#203660]"
+      >
+        <ul
+          class="lg:w-full lg:h-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:uppercase lg:font-semibold lg:text-white lg:px-[75px]"
+        >
+          <li>home</li>
+          <li>solicitar caminhão</li>
+          <li>serviços</li>
+          <li>frota</li>
+          <li>empresa</li>
+          <li>contato</li>
+          <li>faq</li>
+        </ul>
+      </nav>
+      <section
+        class="w-full h-[150px] absolute z-10 flex flex-row justify-between items-center px-[75px]"
+      >
+        <img src="" alt="Logo Lokarsena" />
+        <span class="material-icons">menu</span>
+      </section>
+    </header>
+    <!-- main -->
+    <main class="w-screen h-auto">
+
+ <!-- Slider -->
+  <section class="swiper w-screen h-screen bg-gray-500">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide items-center flex justify-center h-screen">Slide 1</div>
+      <div class="swiper-slide items-center flex justify-center h-screen">Slide 2</div>
+      <div class="swiper-slide items-center flex justify-center h-screen">Slide 3</div>
+    </div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </section>
+
+
+      <section id="card" class="w-screen h-screen border border-black"></section>
+      <section id="card" class="w-screen h-[400px] border border-black"></section>
+      <section id="historia" class="w-screen h-[750px] border border-black"></section>
+      <section id="clientes" class="w-screen h-[100px] border border-black"></section>
+      <section id="empresa" class="w-screen h-screen border border-black"></section>
+      <section id="banner" class="w-screen h-[650px] border border-black"></section>
+      <section id="empresa" class="w-screen h-[600px] border border-black"></section>
+      <section id="fale-conosco" class="w-screen h-screen border border-black"></section>
+
+    </main>
+    <!-- footer -->
+    <footer class="w-full h-[400px]">
+      <nav
+        class=" lg:w-full lg:h-[60px] lg:bg-gradient-to-r lg:from-[#3A9ADE] lg:to-[#203660]"
+      >
+        <ul
+          class="lg:w-full lg:h-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:uppercase lg:font-semibold lg:text-white lg:px-[75px]"
+        >
+          <li>home</li>
+          <li>solicitar caminhão</li>
+          <li>serviços</li>
+          <li>frota</li>
+          <li>empresa</li>
+          <li>contato</li>
+          <li>faq</li>
+        </ul>
+      </nav>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+    autoplay: {
+      delay: 8000, 
+      disableOnInteraction: false, 
+    },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    </script>
+   
+   
+  </body>
+</html>
