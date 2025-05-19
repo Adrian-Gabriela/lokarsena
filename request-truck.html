@@ -1,15 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-        <!-- header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitar Caminhão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
     <header class="relative">
       <nav
-        class="lg:w-full lg:h-[60px] bg-gradient-to-r from-[#3A9ADE] to-[#203660]"
+        class="md:w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660]"
+      >
+        <ul
+          class="hidden md:flex flex-row md:w-full md:h-full justify-between gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]"
+        >
+          <li><a href="index.html">home</a></li>
+          <li><a href="request-truck.html">solicitar caminhão</a></li>
+          <li><a href="">serviços</a></li>
+          <li><a href="">frota</a></li>
+          <li><a href="">empresa</a></li>
+          <li><a href="">contato</a></li>
+          <li><a href="faq.html">faq</a></li>
+        </ul>
+        <ul
+          class="flex md:hidden w-full h-full justify-center gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]"
+        >
+          <li>ver opções</li>
+        </ul>
+      </nav>
+      <section
+        class="w-full h-[150px] z-10 flex flex-row justify-between items-center px-[75px]"
+      >
+        <img src="" alt="Logo Lokarsena" />
+        <span class="material-icons">menu</span>
+      </section>
+    </header>
+
+    <!-- main -->
+    <main class="flex items-center flex-col">
+      <h1 class="uppercase font-semibold text-[18px] text-[#203660]">
+        solicite um caminhão-pipa!
+      </h1>
+      <section class="text-black">
+        <form class="w-screen p-[30px] flex flex-col items-end gap-[16px]">
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="nome">nome</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Nome"
+              name="nome"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">telefone fixo</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Telefone Fixo"
+              name="telefone"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">celular</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Celular"
+              name="celular"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">email</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="email"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">endereço</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Endereço"
+              name="endereco"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">complemento</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Complemento"
+              name="complemento"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">bairro</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Bairro"
+              name="bairro"
+            />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="capitalize font-medium" for="">cidade</label>
+            <input
+              class="w-full h-[35px] pl-[12px] outline-none bg-transparent border-b border-black"
+              type="text"
+              placeholder="Cidade"
+              name="cidade"
+            />
+          </div>
+          <div class="w-full flex flex-col gap-[6px]">
+            <label class="capitalize font-medium" for="">Descrição</label>
+            <textarea
+              class="w-full h-[30px] pl-[12px] outline-none bg-transparent border-b border-black"
+              name=""
+              id=""
+              placeholder="Descrição"
+            ></textarea>
+          </div>
+          <button
+            class="w-[125px] h-[35px] border border-[#203660] text-[#203660] font-semibold flex justify-center items-center gap-[6px] capitalize"
+          >
+            <span class="material-icons">trending_flat</span>
+            enviar
+          </button>
+        </form>
+        <section class="flex flex-col">
+          <article class="w-screen p-[30px] flex flex-col gap-[16px]">
+            <h2 class="font-semibold text-[16px] text-[#203660] uppercase">
+              ligue para nós!
+            </h2>
+            <p class="font-medium opacity-[.75]">
+              Precisa de água potável com urgência? Ligue agora mesmo para
+              solicitar um caminhão-pipa em Belo Horizonte e região
+              metropolitana. Atendemos empresas, condomínios e residências com
+              rapidez e qualidade no abastecimento de água.
+            </p>
+            <div class="flex flex-row gap-[6px] items-center">
+              <div
+                class="w-[35px] h-[35px] grid place-items-center bg-[#C7CCD7] rounded-[50%] text-[#203660]flex-shrink-0"
+              >
+                <span class="material-icons text-[20px]">phone</span>
+              </div>
+              <p class="text-[#203660] font-medium">
+                (31) 3234-1070 - (31) 3447-2600
+              </p>
+            </div>
+          </article>
+          <article class="w-screen p-[30px] flex flex-col gap-[16px]">
+            <h2 class="font-semibold text-[16px] text-[#203660] uppercase">
+              venha nos visitar!
+            </h2>
+            <p class="font-medium opacity-[.75]">
+              A Lokarsena Caminhão-Pipa está localizada em Belo Horizonte,
+              pronta para te atender com as melhores soluções em transporte de
+              água potável. Faça-nos uma visita e conheça de perto nossa
+              estrutura e compromisso com a pontualidade e qualidade.
+            </p>
+            <div class="flex flex-row gap-[6px] items-center">
+              <div
+                class="w-[35px] h-[35px] grid place-items-center bg-[#C7CCD7] rounded-[50%] text-[#203660] flex-shrink-0"
+              >
+                <span class="material-icons text-[20px]">map</span>
+              </div>
+              <p class="text-[#203660] font-medium">
+                Rua Major Messias Meneses, 325. Bairro Bandeirantes-BH/MG
+              </p>
+            </div>
+          </article>
+          <article class="w-screen p-[30px] flex flex-col gap-[16px]">
+            <h2 class="font-semibold text-[16px] text-[#203660] uppercase">
+              mande mensagem!
+            </h2>
+            <p class="font-medium opacity-[.75]">
+              Fale com a nossa equipe de forma rápida e prática pelo WhatsApp.
+              Envie sua solicitação de caminhão-pipa com água potável em Belo
+              Horizonte e receba um atendimento ágil dentro do nosso horário
+              comercial.
+            </p>
+            <div class="flex flex-row gap-[6px] items-center">
+              <div
+                class="w-[35px] h-[35px] grid place-items-center bg-[#C7CCD7] rounded-[50%] text-[#203660] flex-shrink-0"
+              >
+                <span class="material-icons text-[20px]">chat</span>
+              </div>
+              <p class="text-[#203660] font-medium">(31) 99737-5465</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="w-full h-[400px]">
+      <nav
+        class="lg:w-full lg:h-[60px] lg:bg-gradient-to-r lg:from-[#3A9ADE] lg:to-[#203660]"
       >
         <ul
           class="lg:w-full lg:h-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:uppercase lg:font-semibold lg:text-white lg:px-[75px]"
@@ -23,13 +227,6 @@
           <li>faq</li>
         </ul>
       </nav>
-      <section
-        class="w-full h-[150px] z-10 flex flex-row justify-between items-center px-[75px]"
-      >
-        <img src="" alt="Logo Lokarsena" />
-        <span class="material-icons">menu</span>
-      </section>
-    </header>
-
-</body>
+    </footer>
+  </body>
 </html>

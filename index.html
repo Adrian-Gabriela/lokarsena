@@ -27,18 +27,23 @@
     <!-- header -->
     <header class="relative">
       <nav
-        class="lg:w-full lg:h-[60px] lg:bg-gradient-to-r lg:from-[#3A9ADE] lg:to-[#203660]"
+        class="md:w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660]"
       >
         <ul
-          class="lg:w-full lg:h-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:uppercase lg:font-semibold lg:text-white lg:px-[75px]"
+          class="hidden md:flex flex-row md:w-full md:h-full justify-between gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]"
         >
-          <li>home</li>
-          <li>solicitar caminhão</li>
-          <li>serviços</li>
-          <li>frota</li>
-          <li>empresa</li>
-          <li>contato</li>
-          <li>faq</li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="request-truck.html">solicitar caminhão</a></li>
+          <li><a href="">serviços</a></li>
+          <li><a href="">frota</a></li>
+          <li><a href="">empresa</a></li>
+          <li><a href="contacts.html">contato</a></li>
+          <li><a href="faq.html">faq</a></li>
+        </ul>
+        <ul
+          class="flex md:hidden w-full h-full justify-center gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]"
+        >
+          <li>ver opções</li>
         </ul>
       </nav>
       <section
@@ -214,11 +219,71 @@
         class="w-screen h-[100px] border border-black"
       ></section>
 
-      <section
-      id="servicos"
-      class="w-screen h-[600px] border border-black"
-    ></section>
 
+  <section
+        class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] gap-[16px]"
+      >
+        <h1 class="font-semibold text-[20px] uppercase text-white">
+          conheça nossos serviços
+        </h1>
+        <p class="text-center text-white">
+          Se você não encontrou sua demanda entre nossos serviços, entre em
+          contato pelos telefones
+          <strong>(31) 3234-1070, (31) 3447-2600, (31) 99737-5465,</strong> pelo
+          nosso Formulário de Contato ou pelo e-mail lokarsena@lokarsena.com.br.
+          Teremos prazer em entender sua necessidade e oferecer a solução com
+          caminhão-pipa em Belo Horizonte e região ideal para o transporte de
+          água.
+        </p>
+        <!-- Slider -->
+        <section class="swiper w-[200px] h-[300px]">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+          </div>
+
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+        </section>
+      </section>
 
       <section
         id="banner"
@@ -386,6 +451,15 @@
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      const swiper2 = new Swiper(".swiper2", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination2",
           clickable: true,
         },
       });

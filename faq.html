@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perguntas Frequentes</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,7 +66,7 @@
         <li
           class="w-full h-[75px] rounded bg-white flex items-center gap-[16px] px-[16px] justify-between"
         >
-          <p class="flex-1">
+          <p class="flex-1 font-semibold font-semibold">
             Como funciona o serviço de caminhão-pipa da Lokarsena?
           </p>
           <button
@@ -74,7 +78,9 @@
         <li
           class="w-full h-[75px] rounded bg-white flex items-center gap-[16px] px-[16px] justify-between"
         >
-          <p class="flex-1">A água fornecida pelo caminhão-pipa é potável?</p>
+          <p class="flex-1 font-semibold">
+            A água fornecida pelo caminhão-pipa é potável?
+          </p>
           <button
             class="rounded-[50%] border border-black h-[35px] w-[35px] grid place-items-center bg-[#1E1E1E]"
           >
@@ -84,7 +90,9 @@
         <li
           class="w-full h-[75px] rounded bg-white flex items-center gap-[16px] px-[16px] justify-between"
         >
-          <p class="flex-1">Em quais regiões a Lokarsena atende?</p>
+          <p class="flex-1 font-semibold">
+            Em quais regiões a Lokarsena atende?
+          </p>
           <button
             class="rounded-[50%] border border-black h-[35px] w-[35px] grid place-items-center bg-[#1E1E1E]"
           >
@@ -94,7 +102,7 @@
         <li
           class="w-full h-[75px] rounded bg-white flex items-center gap-[16px] px-[16px] justify-between"
         >
-          <p class="flex-1">
+          <p class="flex-1 font-semibold">
             Qual a capacidade dos caminhões-pipa da lokarsena?
           </p>
 
@@ -107,7 +115,9 @@
         <li
           class="w-full h-[75px] rounded bg-white flex items-center gap-[16px] px-[16px] justify-between"
         >
-          <p class="flex-1">Posso agendar um caminhão-pipa com antecedência?</p>
+          <p class="flex-1 font-semibold">
+            Posso agendar um caminhão-pipa com antecedência?
+          </p>
           <button
             class="rounded-[50%] border border-black h-[35px] w-[35px] grid place-items-center bg-[#1E1E1E]"
           >
@@ -117,7 +127,7 @@
         <li
           class="w-full h-[75px] rounded bg-white flex items-center gap-[16px] px-[16px] justify-between"
         >
-          <p class="flex-1">
+          <p class="flex-1 font-semibold">
             Quais os métodos de pagamentos aceitos pela lokarsena?
           </p>
           <button
@@ -127,6 +137,71 @@
           </button>
         </li>
       </ul>
+
+      <section
+        class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] gap-[16px]"
+      >
+        <h1 class="font-semibold text-[20px] uppercase text-white">
+          conheça nossos serviços
+        </h1>
+        <p class="text-center text-white">
+          Se você não encontrou sua demanda entre nossos serviços, entre em
+          contato pelos telefones
+          <strong>(31) 3234-1070, (31) 3447-2600, (31) 99737-5465,</strong> pelo
+          nosso Formulário de Contato ou pelo e-mail lokarsena@lokarsena.com.br.
+          Teremos prazer em entender sua necessidade e oferecer a solução com
+          caminhão-pipa em Belo Horizonte e região ideal para o transporte de
+          água.
+        </p>
+        <!-- Slider -->
+        <section class="swiper w-[200px] h-[300px]">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+          </div>
+
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+        </section>
+      </section>
     </main>
 
     <!-- footer -->
@@ -147,5 +222,25 @@
         </ul>
       </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
