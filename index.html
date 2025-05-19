@@ -56,7 +56,7 @@
     <!-- main -->
     <main class="w-screen h-auto">
       <!-- Slider -->
-      <section class="swiper w-screen h-screen bg-gray-500">
+      <section class="swiper w-screen h-[200px] lg:h-[550px] bg-gray-500">
         <div class="swiper-wrapper">
           <div class="swiper-slide items-center flex justify-center h-screen">
             Slide 1
@@ -161,34 +161,34 @@
       </div>
       </section>
 
-      <section id="historia" class="w-screen h-auto lg:flex flex-row">
+      <section id="historia" class="w-screen h-auto lg:flex flex-row lg:px-[75px]">
         <div
-          class="w-[575px] h-[570px] bg-[url('./assets/img/empresaValoresMobile.png')] bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/img/empresaValores.png')] lg:mx-[75px] lg:h-[620px]"
+          class="w-screen lg:w-[40%] bg-[url('./assets/img/empresaValoresMobile.png')] bg-contain bg-center bg-no-repeat md:bg-[url('./assets/img/empresaValores.png')]"
         >
         </div>
 
-        <div class="w-full h-auto lg:w-[580px]">
-          <h1 class="text-[20px] text-[#203660] font-semibold text-center pt-[20px]">Conheça a Lokarsena</h1>
-          <div class="p-[20px] font-normal flex flex-col gap-[10px]">
+        <section class=" flex-1 flex flex-col px-[30px]">
+          <h1 class="w-full text-[18px] md:text-[32px] text-[#203660] font-semibold">Conheça a Lokarsena</h1>
+          <div class=" font-normal flex flex-col gap-[16px]">
           <p class="lg:text-[16px]">
            <strong class="text-[#F9CC23] font-semibold lg:text-[16px]">Com mais de 20 anos de experiência</strong> no transporte de água potável em
             Belo Horizonte, a Lokarsena é referência no fornecimento por
             caminhão-pipa para empresas e residências. Atendemos desde pessoas
             físicas até grandes empresas, com soluções sob medida para quem
-            precisa de água potável com <strong class="text-[#203660] font-medium lg:text-[16px]">rapidez, segurança e qualidade.</strong>
+            precisa de água potável com <strong class="text-[#F9CC23] font-semibold lg:text-[16px]">rapidez, segurança e qualidade.</strong>
             Oferecemos abastecimento de água para diversos setores, como
             (Construção civil, urbanização e compactação de solo, limepza
             urbana, indústria e mineração, condomínios e residências, piscinas,
             caixas d’agua e abastecimento em níveis superiores).
           </p>
-          <div class="lg:flex flex-row">
+          <div class="lg:flex flex-row lg:gap-[16px]">
           <p class="lg:text-[16px]">
             Nosso serviço de caminhão-pipa com água potável é ideal para quem
-            busca <strong class="text-[#F9CC23] font-semibold lg:text-[16px]" >agilidade, economia de tempo e tranquilidade</strong> <strong class="text-[#203660] font-medium lg:text-[16px]" >na gestão de
+            busca <strong class="text-[#F9CC23] font-semibold lg:text-[16px]" >agilidade, economia de tempo e tranquilidade</strong> <strong class="text-[#203660] font-medium lg:text-[12]" >na gestão de
             recursos hídricos</strong>. Serviços de abastecimento com caminhão-pipa em BH
             e região
           </p>
-          <p class="lg:text-[16px] pl-[50px]">
+          <p class="lg:text-[16px]">
             Realizamos o reabastecimento de caixas d’água em prédios de até 30
             andares, casas, condomínios e piscinas. É a solução ideal para
             emergências de falta de água ou manutenções na rede hidráulica.
@@ -208,10 +208,10 @@
           </p>
         </div>
 
-        <div class="w-full h-auto p-[20px] flex justify-end pointer-events-auto lg:justify-start">
-          <button class="w-[170px] h-[50px] bg-[#203660] text-white lg:text-[16px]" type="button">Nossa Sede</button>
-        </div>
-        </div>
+       
+          <button class="w-[125px] h-[35px] lg:w-[250px] my-[32px] lg:h-[50px] bg-[#203660] text-white lg:text-[16px]" type="button">Nossa Sede</button>
+      
+        </section>
       </section>
 
       <section
@@ -221,9 +221,9 @@
 
 
   <section
-        class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] gap-[16px]"
+        class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] md:p-[75px] gap-[32px]"
       >
-        <h1 class="font-semibold text-[20px] uppercase text-white">
+        <h1 class="font-semibold text-[20px] uppercase text-white md:text-[48px]">
           conheça nossos serviços
         </h1>
         <p class="text-center text-white">
@@ -236,10 +236,10 @@
           água.
         </p>
         <!-- Slider -->
-        <section class="swiper w-[200px] h-[300px]">
+        <section class="swiper w-[200px] h-[300px] md:w-[70%] md:h-[75%]">
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col "
             >
               <img
                 src="./assets/img/caminhoesPipa.png"
@@ -284,7 +284,6 @@
           <div class="swiper-pagination"></div>
         </section>
       </section>
-
       <section
         id="banner"
         class="w-screen h-[200px] lg:h-[550px] bg-[url('./assets/img/banner.png')] bg-cover bg-center bg-no-repeat"
@@ -462,8 +461,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      const width = innerWidth;
       const swiper = new Swiper(".swiper", {
-        slidesPerView: 1,
+        slidesPerView: width < 1024 ? 1 : 3,
         spaceBetween: 20,
         loop: true,
         autoplay: {
