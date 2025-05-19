@@ -26,6 +26,27 @@
   <body class="h-auto">
     <!-- header -->
     <header class="relative">
+      <nav class="menu-nav hidden flex-col absolute w-screen h-auto top[0] left-[0] bg-white z-20  px-[30px] lg:px-[75px]">
+              <section
+        class="w-full h-[75px] flex flex-row justify-between items-center border-b border-black/10"
+      >
+        <img src="" alt="Logo Lokarsena" />
+        <span class="material-icons menu-button-close">close</span>
+      </section>
+      <ul class="w-full h-auto lg:h-[300px] grow text-black py-[30px] flex flex-col gap-[16px] lg:flex-wrap uppercase font-semibold ">
+       <li><a href="index.html" class="text-[16px]">home</a></li>
+          <li><a href="request-truck.html" class="text-[16px]">solicitar caminhão</a></li>
+          <li><a href="#services" class="text-[16px]">serviços</a></li>
+          <li><a href="fleet.html" class="text-[16px]">frota</a></li>
+          <li><a href="#enterprise" class="text-[16px]">empresa</a></li>
+          <li><a href="contacts.html" class="text-[16px]">contato</a></li>
+          <li><a href="faq.html" class="text-[16px]">faq</a></li>
+          <li><a href="" class="text-[16px]">onde estamos</a></li>
+        <li><a href="" class="text-[16px]">política de privacidade</a></li>
+
+      </ul>
+      </nav>
+
       <nav
         class="md:w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660]"
       >
@@ -34,29 +55,31 @@
         >
           <li><a href="index.html">home</a></li>
           <li><a href="request-truck.html">solicitar caminhão</a></li>
-          <li><a href="">serviços</a></li>
-          <li><a href="">frota</a></li>
-          <li><a href="">empresa</a></li>
+          <li><a href="#services">serviços</a></li>
+          <li><a href="fleet.html">frota</a></li>
+          <li><a href="#enterprise">empresa</a></li>
           <li><a href="contacts.html">contato</a></li>
           <li><a href="faq.html">faq</a></li>
         </ul>
         <ul
           class="flex md:hidden w-full h-full justify-center gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]"
         >
-          <li>ver opções</li>
+          <li class="menu-button">ver opções</li>
         </ul>
       </nav>
       <section
         class="w-full h-[150px] absolute z-10 flex flex-row justify-between items-center px-[75px]"
       >
         <img src="" alt="Logo Lokarsena" />
-        <span class="material-icons">menu</span>
+        <span class="material-icons menu-button">menu</span>
       </section>
+      
     </header>
     <!-- main -->
     <main class="w-screen h-auto">
+
       <!-- Slider -->
-      <section class="swiper w-screen h-[200px] lg:h-[550px] bg-gray-500">
+      <section class="swiper2 w-screen h-screen bg-gray-500">
         <div class="swiper-wrapper">
           <div class="swiper-slide items-center flex justify-center h-screen">
             Slide 1
@@ -69,12 +92,9 @@
           </div>
         </div>
 
-        <!-- Paginação -->
-        <div class="swiper-pagination"></div>
       </section>
-
       <section
-        id="card"
+        id="enterprise"
         class="w-screen p-[30px] h-auto lg:h-[400px] flex flex-col gap-[30px] lg:flex-row justify-center items-center lg:px-[75px]"
       >
         <article
@@ -161,7 +181,7 @@
       </div>
       </section>
 
-      <section id="historia" class="w-screen h-auto lg:flex flex-row lg:px-[75px]">
+      <section class="w-screen h-auto lg:flex flex-row lg:px-[75px]">
         <div
           class="w-screen lg:w-[40%] bg-[url('./assets/img/empresaValoresMobile.png')] bg-contain bg-center bg-no-repeat md:bg-[url('./assets/img/empresaValores.png')]"
         >
@@ -219,8 +239,8 @@
         class="w-screen h-[100px] border border-black"
       ></section>
 
-
   <section
+  id="services"
         class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] md:p-[75px] gap-[32px]"
       >
         <h1 class="font-semibold text-[20px] uppercase text-white md:text-[48px]">
@@ -310,7 +330,7 @@
       </section>
 
       <section
-      id="empresa"
+  
       class="w-screen h-auto lg:h-[600px]"
     >
       <div class="flex flex-col gap-[15px] p-[30px] lg:px-[100px] lg:px-[75px] ">
@@ -397,13 +417,13 @@
         <ul
           class="lg:w-full lg:h-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:uppercase lg:font-semibold lg:text-white lg:px-[75px]"
         >
-          <li>home</li>
-          <li>solicitar caminhão</li>
-          <li>serviços</li>
-          <li>frota</li>
-          <li>empresa</li>
-          <li>contato</li>
-          <li>faq</li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="request-truck.html">solicitar caminhão</a></li>
+          <li><a href="#services">serviços</a></li>
+          <li><a href="fleet.html">frota</a></li>
+          <li><a href="#enterprise">empresa</a></li>
+          <li><a href="contacts.html">contato</a></li>
+          <li><a href="faq.html">faq</a></li>
         </ul>
       </nav>
       <div class="lg:w-full lg:flex lg:flex-row lg:px-[75px] lg:gap-[180px]">
@@ -458,7 +478,7 @@
     <img class="w-[70px] cursor-pointer" src="./assets/img/whatsapp.png" alt="fale conosco para tranporte de água em caminhão pipa">
   </a>
    </div>
-
+<script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const width = innerWidth;
@@ -480,14 +500,15 @@
         },
       });
       const swiper2 = new Swiper(".swiper2", {
-        slidesPerView: 1,
+       slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
-        pagination: {
-          el: ".swiper-pagination2",
-          clickable: true,
-        },
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        }
       });
     </script>
+    
   </body>
 </html>

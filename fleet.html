@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frota</title>
     <script src="https://cdn.tailwindcss.com"></script>
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,7 +49,7 @@
         class="w-full h-[150px] z-10 flex flex-row justify-between items-center px-[75px]"
       >
         <img src="" alt="Logo Lokarsena" />
-        <span class="material-icons">menu</span>
+     <span class="material-icons menu">menu</span>
       </section>
     </header>
 
@@ -123,13 +127,13 @@
         <ul
           class="lg:w-full lg:h-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:uppercase lg:font-semibold lg:text-white lg:px-[75px]"
         >
-          <li>home</li>
-          <li>solicitar caminhão</li>
-          <li>serviços</li>
-          <li>frota</li>
-          <li>empresa</li>
-          <li>contato</li>
-          <li>faq</li>
+                       <li><a href="index.html">home</a></li>
+          <li><a href="request-truck.html">solicitar caminhão</a></li>
+          <li><a href="#services">serviços</a></li>
+          <li><a href="fleet.html">frota</a></li>
+          <li><a href="index.html#enterprise">empresa</a></li>
+          <li><a href="contacts.html">contato</a></li>
+          <li><a href="faq.html">faq</a></li>
         </ul>
       </nav>
       <div class="lg:w-full lg:flex lg:flex-row lg:px-[75px] lg:gap-[180px]">
@@ -185,7 +189,8 @@
       <img class="w-[70px] cursor-pointer" src="./assets/img/whatsapp.png" alt="fale conosco para tranporte de água em caminhão pipa">
     </a>
      </div>
-
+<script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
       const width = innerWidth;
       const swiper = new Swiper(".swiper", {
