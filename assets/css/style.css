@@ -1,23 +1,31 @@
 * {
-    font-family: "Poppins";
-    box-sizing: border-box;
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-    width: 100vw;
+  scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body {
-    overflow-x: hidden;
-    width: 100vw;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-    -webkit-text-fill-color: white !important;
-    transition: background-color 9999s ease-in-out 0s !important;
-  }
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+input:focus {
+    border-bottom-color: #f9cc23;
+}
+
+a:hover {
+  color: #f9cc23;
+}

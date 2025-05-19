@@ -219,11 +219,71 @@
         class="w-screen h-[100px] border border-black"
       ></section>
 
-      <section
-      id="servicos"
-      class="w-screen h-[600px] border border-black"
-    ></section>
 
+  <section
+        class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] gap-[16px]"
+      >
+        <h1 class="font-semibold text-[20px] uppercase text-white">
+          conheça nossos serviços
+        </h1>
+        <p class="text-center text-white">
+          Se você não encontrou sua demanda entre nossos serviços, entre em
+          contato pelos telefones
+          <strong>(31) 3234-1070, (31) 3447-2600, (31) 99737-5465,</strong> pelo
+          nosso Formulário de Contato ou pelo e-mail lokarsena@lokarsena.com.br.
+          Teremos prazer em entender sua necessidade e oferecer a solução com
+          caminhão-pipa em Belo Horizonte e região ideal para o transporte de
+          água.
+        </p>
+        <!-- Slider -->
+        <section class="swiper w-[200px] h-[300px]">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+            <div
+              class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col"
+            >
+              <img
+                src="./assets/img/caminhoesPipa.png"
+                alt=""
+                class="w-full h-[75%]"
+              />
+              <figcaption class="w-full px-[15px]">adrian</figcaption>
+            </div>
+          </div>
+
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+        </section>
+      </section>
 
       <section
         id="banner"
@@ -391,6 +451,15 @@
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      const swiper2 = new Swiper(".swiper2", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination2",
           clickable: true,
         },
       });
