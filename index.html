@@ -79,7 +79,7 @@
     <main class="w-screen h-auto">
 
       <!-- Slider -->
-      <section class="swiper2 w-screen h-screen bg-gray-500">
+      <section class="swiper2 w-screen h-screen overflow-hidden bg-gray-500">
         <div class="swiper-wrapper">
           <div class="swiper-slide items-center flex justify-center h-screen">
             Slide 1
@@ -94,7 +94,7 @@
 
       </section>
       <section
-        id="enterprise"
+        
         class="w-screen p-[30px] h-auto lg:h-[400px] flex flex-col gap-[30px] lg:flex-row justify-center items-center lg:px-[75px]"
       >
         <article
@@ -181,13 +181,13 @@
       </div>
       </section>
 
-      <section class="w-screen h-auto lg:flex flex-row lg:px-[75px]">
+      <section class="w-screen h-auto lg:flex flex-row lg:px-[75px] items-center">
         <div
-          class="w-full h-[480px] bg-[url('./assets/img/empresaValoresMobile.png')] bg-contain bg-center bg-no-repeat lg:w-[40%] md:bg-[url('./assets/img/empresaValores.png')]"
+          class="w-full lg:w-[40%] h-[480px] bg-[url('./assets/img/empresaValoresMobile.png')] bg-cover md:bg-contain bg-center bg-no-repeat  md:bg-[url('./assets/img/empresaValores.png')]"
         >
         </div>
 
-        <section class=" flex-1 flex flex-col p-[30px]">
+        <section id="enterprise" class=" flex-1 flex flex-col p-[30px] gap-[32px]">
           <h1 class="w-full text-[18px] text-[#203660] font-semibold md:text-[32px]">Conheça a Lokarsena</h1>
           <div class="font-normal flex flex-col gap-[16px]">
           <p class="lg:text-[16px]">
@@ -234,28 +234,45 @@
       
         </section>
       </section>
-
-      <section
-        id="clientes"
-        class="w-full h-auto items-center"
-      >
-      <div class="swiper-clientes py-[20px]">
-        <div class="swiper-wrapper w-[170px]">
-       
-          <div class="swiper-slide"> <img src="./assets/img/MINASGOV-150x75.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="./assets/img/ANGLOAMERICAN-150x75.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="./assets/img/VALE-150x75.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="./assets/img/GLOBO-150x75.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="./assets/img/SESC.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="/assets/img/FUMEC.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="/assets/img/PHV.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="/assets/img/UNA.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="/assets/img/TERRAZZAS.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="/assets/img/ROSSI.png" alt=""> </div>
-          <div class="swiper-slide"> <img src="/assets/img/DIRECIONAL.png" alt=""> </div>
-        </div>
+<section id="clientes" class="w-full h-auto overflow-hidden grid place-items-center">
+  <div class="swiper-clientes w-screen py-[30px] box-border">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/MINASGOV-150x75.png" alt="Minas Gerais" />
       </div>
-    </section>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/ANGLOAMERICAN-150x75.png" alt="Anglo American" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/VALE-150x75.png" alt="Vale" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/GLOBO-150x75.png" alt="Globo" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/SESC.png" alt="SESC" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/FUMEC.png" alt="FUMEC" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/PHV.png" alt="PHV" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/UNA.png" alt="UNA" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/TERRAZZAS.png" alt="Terrazzas" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/ROSSI.png" alt="Rossi" />
+      </div>
+      <div class="swiper-slide">
+        <img class="max-w-[125px] lg:max-w-[150px] max-h-[75px] w-auto h-auto mx-auto" src="./assets/img/DIRECIONAL.png" alt="Direcional" />
+      </div>
+    </div>
+  </div>
+</section>
 
   <section
   id="services"
@@ -339,9 +356,9 @@
         abastecimento de água.
       </p>
       <div class="hidden lg:flex lg:w-full h-auto lg:px-[30px] justify-end lg:pointer-events-auto">
-        <button class="w-[200px] lg:h-[50px] text-white uppercase border-[2px] border-white">
-          Saiba Mais
-        </button>
+        
+         <a href="#enterprise" class="w-[200px] lg:h-[50px] text-white uppercase border-[2px] border-white hover:border-[#F9CC23] hover:text-[#F9CC23] grid place-items-center">Saiba Mais</a> 
+        
       </div>
       
     </div>
@@ -349,32 +366,32 @@
 
       <section
   
-      class="w-screen h-auto lg:h-[600px]"
+      class="w-screen h-auto p-[30px] lg:p-[75px] bg-[#F5F5F5] flex flex-col gap-[32px]"
     >
-      <div class="flex flex-col gap-[15px] p-[30px] lg:px-[100px] lg:px-[75px] ">
+      <div class="flex flex-col gap-[16px]  ">
         <h1 class="text-[20px] lg:text-[36px] font-semibold">Valores da <span class="text-[#F9CC23] text-[20px] font-semibold lg:text-[36px]">Lokarsena</span></h1>
-        <p class="text-[14px] lg:w-[70%]">Na Lokarsena, construímos nossa reputação com base em três pilares fundamentais: flexibilidade, eficiência e pontualidade. Esses valores orientam todas as etapas dos nossos serviços de transporte de água potável com caminhão-pipa em Belo Horizonte e região.</p>
+        <p class="text-[14px] lg:w-[75%] font-medium ">Na Lokarsena, construímos nossa reputação com base em três pilares fundamentais: flexibilidade, eficiência e pontualidade. Esses valores orientam todas as etapas dos nossos serviços de transporte de água potável com caminhão-pipa em Belo Horizonte e região.</p>
       </div>
 
-      <div class="flex flex-col gap-[30px] items-center py-[30px] lg:flex-row lg:justify-center lg:px-[75px]">
-         <article class="w-[300px] h-[300px] bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
+      <div class="flex flex-col gap-[64px] items-center py-[30px] lg:flex-row lg:justify-center lg:px-[75px]">
+         <article class="w-[300px] lg:w-[350px] aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
           <div class="flex flex-col gap-[15px] text-center justify-center p-[35px]" >
-          <h2 class="text-[20px] font-semibold">Flexibilidade</h2>
-          <p class="text-[12px] ">Entendemos que cada cliente tem uma necessidade específica. Por isso, oferecemos soluções personalizadas de abastecimento de água, adequadas ao seu tipo de demanda — seja para residências, empresas, obras ou situações emergenciais.</p>
+          <h2 class="text-[18px] lg:text-[24px] font-semibold">Flexibilidade</h2>
+          <p class="text-[12px] lg:text-[16px] font-medium">Entendemos que cada cliente tem uma necessidade específica. Por isso, oferecemos soluções personalizadas de abastecimento de água, adequadas ao seu tipo de demanda — seja para residências, empresas, obras ou situações emergenciais.</p>
         </div>
          </article>
 
-         <article class="w-[300px] h-[300px] bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
+         <article class="w-[300px] lg:w-[350px] aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
           <div class="flex flex-col gap-[15px] text-center justify-center p-[35px]" >
-          <h2 class="text-[20px] font-semibold">Eficiência</h2>
-          <p class="text-[12px]">Prezamos por um atendimento ágil, com logística bem planejada e entregas rápidas de água potável tratada, sempre com controle de qualidade e segurança no processo.</p>
+          <h2 class="text-[18px] lg:text-[24px] font-semibold">Eficiência</h2>
+          <p class="text-[12px] lg:text-[16px] font-medium">Prezamos por um atendimento ágil, com logística bem planejada e entregas rápidas de água potável tratada, sempre com controle de qualidade e segurança no processo.</p>
         </div>
          </article>
 
-         <article class="w-[300px] h-[300px] bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
+         <article class="w-[300px] lg:w-[350px] aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
           <div class="flex flex-col gap-[15px] text-center justify-center p-[35px]" >
-          <h2 class="text-[20px] font-semibold">Pontualidade</h2>
-          <p class="text-[12px]">Cumprimos prazos com rigor. Sabemos que a falta de água impacta diretamente o funcionamento de casas e negócios, e por isso garantimos que nossos caminhões-pipa cheguem no horário combinado, com profissionalismo e responsabilidade.</p>
+          <h2 class="text-[18px] lg:text-[24px] font-semibold">Pontualidade</h2>
+          <p class="text-[12px] lg:text-[16px] font-medium">Cumprimos prazos com rigor. Sabemos que a falta de água impacta diretamente o funcionamento de casas e negócios, e por isso garantimos que nossos caminhões-pipa cheguem no horário combinado, com profissionalismo e responsabilidade.</p>
         </div>
          </article>
 
@@ -527,18 +544,14 @@
         }
       });
       const swiperClientes = new Swiper(".swiper-clientes", {
-       slidesPerView: 3,
-       spaceBetween: 15,
+      slidesPerView: width < 1024 ? 2 : 4,
+       spaceBetween: 0,
        loop: true,
        autoplay: {
-       delay: 8000,
+       delay: 3000,
        disableOnInteraction: false,
       },
-       breakpoints: {
-       1024: {
-       slidesPerView: 4, 
-    },
-  },
+      
 });
 
     </script>
