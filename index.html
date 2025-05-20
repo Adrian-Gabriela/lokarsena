@@ -183,19 +183,19 @@
 
       <section class="w-screen h-auto lg:flex flex-row lg:px-[75px]">
         <div
-          class="w-screen lg:w-[40%] bg-[url('./assets/img/empresaValoresMobile.png')] bg-contain bg-center bg-no-repeat md:bg-[url('./assets/img/empresaValores.png')]"
+          class="w-full h-[480px] bg-[url('./assets/img/empresaValoresMobile.png')] bg-contain bg-center bg-no-repeat lg:w-[40%] md:bg-[url('./assets/img/empresaValores.png')]"
         >
         </div>
 
-        <section class=" flex-1 flex flex-col px-[30px]">
-          <h1 class="w-full text-[18px] md:text-[32px] text-[#203660] font-semibold">Conheça a Lokarsena</h1>
-          <div class=" font-normal flex flex-col gap-[16px]">
+        <section class=" flex-1 flex flex-col p-[30px]">
+          <h1 class="w-full text-[18px] text-[#203660] font-semibold md:text-[32px]">Conheça a Lokarsena</h1>
+          <div class="font-normal flex flex-col gap-[16px]">
           <p class="lg:text-[16px]">
            <strong class="text-[#F9CC23] font-semibold lg:text-[16px]">Com mais de 20 anos de experiência</strong> no transporte de água potável em
             Belo Horizonte, a Lokarsena é referência no fornecimento por
             caminhão-pipa para empresas e residências. Atendemos desde pessoas
             físicas até grandes empresas, com soluções sob medida para quem
-            precisa de água potável com <strong class="text-[#F9CC23] font-semibold lg:text-[16px]">rapidez, segurança e qualidade.</strong>
+            precisa de água potável com <strong class="text-[#203660] font-medium lg:text-[16px]">rapidez, segurança e qualidade.</strong>
             Oferecemos abastecimento de água para diversos setores, como
             (Construção civil, urbanização e compactação de solo, limepza
             urbana, indústria e mineração, condomínios e residências, piscinas,
@@ -204,7 +204,7 @@
           <div class="lg:flex flex-row lg:gap-[16px]">
           <p class="lg:text-[16px]">
             Nosso serviço de caminhão-pipa com água potável é ideal para quem
-            busca <strong class="text-[#F9CC23] font-semibold lg:text-[16px]" >agilidade, economia de tempo e tranquilidade</strong> <strong class="text-[#203660] font-medium lg:text-[12]" >na gestão de
+            busca <strong class="text-[#F9CC23] font-semibold lg:text-[16px]" >agilidade, economia de tempo e tranquilidade</strong> <strong class="text-[#203660] font-medium lg:text-[16px]" >na gestão de
             recursos hídricos</strong>. Serviços de abastecimento com caminhão-pipa em BH
             e região
           </p>
@@ -228,16 +228,34 @@
           </p>
         </div>
 
-       
-          <button class="w-[125px] h-[35px] lg:w-[250px] my-[32px] lg:h-[50px] bg-[#203660] text-white lg:text-[16px]" type="button">Nossa Sede</button>
+        <div class="w-full h-auto p-[20px flex justify-end cursor-pointer lg:justify-start">
+          <button class="w-[170px] h-[50px] bg-[#203660] text-white" type="button">Nossa Sede</button>
+        </div>
       
         </section>
       </section>
 
       <section
         id="clientes"
-        class="w-screen h-[100px] border border-black"
-      ></section>
+        class="w-full h-auto items-center"
+      >
+      <div class="swiper-clientes py-[20px]">
+        <div class="swiper-wrapper w-[170px]">
+       
+          <div class="swiper-slide"> <img src="./assets/img/MINASGOV-150x75.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="./assets/img/ANGLOAMERICAN-150x75.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="./assets/img/VALE-150x75.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="./assets/img/GLOBO-150x75.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="./assets/img/SESC.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="/assets/img/FUMEC.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="/assets/img/PHV.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="/assets/img/UNA.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="/assets/img/TERRAZZAS.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="/assets/img/ROSSI.png" alt=""> </div>
+          <div class="swiper-slide"> <img src="/assets/img/DIRECIONAL.png" alt=""> </div>
+        </div>
+      </div>
+    </section>
 
   <section
   id="services"
@@ -508,6 +526,21 @@
           disableOnInteraction: false,
         }
       });
+      const swiperClientes = new Swiper(".swiper-clientes", {
+       slidesPerView: 3,
+       spaceBetween: 15,
+       loop: true,
+       autoplay: {
+       delay: 8000,
+       disableOnInteraction: false,
+      },
+       breakpoints: {
+       1024: {
+       slidesPerView: 4, 
+    },
+  },
+});
+
     </script>
     
   </body>
