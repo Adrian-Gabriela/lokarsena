@@ -21,7 +21,7 @@
 </head>
 
 <body class="w-screen">
-  <!-- header -->
+   <!-- header -->
   <header class="relative">
     <nav class="menu-nav hidden flex-col fixed w-screen h-auto top[0] left-[0] bg-white z-20  px-[30px] lg:px-[75px]">
       <section class="w-full h-[75px] flex flex-row justify-between items-center border-b border-black/10">
@@ -61,6 +61,11 @@
             </span>
           </div>
         </li>
+        <li class="flex flex-row w-full justify-between">
+          <a class="text-[12px] text-[#203660] font-medium lg:text-[16px]" href="tel:+553132341070">(31) 3234-1070</a>
+          <a class="text-[12px] text-[#203660] font-medium lg:text-[16px]" href="tel:+553134472600">(31) 3447-2600</a>
+          <a class="text-[12px] text-[#203660] font-medium lg:text-[16px]" href="tel:+5531997375465">(31) 99737-5465</a>
+        </li>
       </ul>
     </nav>
 
@@ -97,6 +102,7 @@
     </section>
 
   </header>
+
 
   <!-- main -->
   <main class="w-screen h-auto bg-[#F1F0F0] flex flex-col items-center">
@@ -201,11 +207,11 @@
 
     </section>
     <section id="services"
-      class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] md:p-[75px] gap-[32px]">
+      class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] lg:p-[75px] gap-[32px]">
       <h1 class="font-semibold text-[20px] uppercase text-white md:text-[48px]">
         conheça nossos serviços
       </h1>
-      <p class="text-center text-white">
+      <p class="text-center text-white text-[12px] lg:text-[16px]">
         Se você não encontrou sua demanda entre nossos serviços, entre em
         contato pelos telefones
         <strong>(31) 3234-1070, (31) 3447-2600, (31) 99737-5465,</strong> pelo
@@ -218,20 +224,23 @@
       <section class="swiper w-[200px] h-[300px] md:w-[70%] md:h-[75%]">
         <div class="swiper-wrapper">
           <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col ">
-            <img src="./assets/img/caminhoesPipa.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full px-[15px]">adrian</figcaption>
+            <img src="./assets/img/servico1.png" alt="" class="w-full h-[75%]" />
+            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Irrigação de plantas, jardins ou
+              canteiros</figcaption>
           </div>
           <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col">
-            <img src="./assets/img/caminhoesPipa.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full px-[15px]">adrian</figcaption>
+            <img src="./assets/img/servico2.png" alt="" class="w-full h-[75%]" />
+            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Limpeza de ruas e avenidas
+            </figcaption>
           </div>
           <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col">
-            <img src="./assets/img/caminhoesPipa.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full px-[15px]">adrian</figcaption>
+            <img src="./assets/img/servico3.png" alt="" class="w-full h-[75%]" />
+            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Abastecimento em níveis superiores
+            </figcaption>
           </div>
           <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col">
-            <img src="./assets/img/caminhoesPipa.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full px-[15px]">adrian</figcaption>
+            <img src="./assets/img/servico4.png" alt="" class="w-full h-[75%]" />
+            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Obras e construções</figcaption>
           </div>
         </div>
 
@@ -341,7 +350,7 @@
   <script>
     const width = innerWidth;
     const swiper = new Swiper(".swiper", {
-      slidesPerView: width < 1024 ? 1 : 3,
+      slidesPerView: width <= 1024 ? 1 : 3,
       spaceBetween: 20,
       loop: true,
       autoplay: {
