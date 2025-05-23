@@ -71,9 +71,9 @@
       </ul>
     </nav>
 
-    <nav class="md:w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660] ">
+    <nav class="w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660] ">
       <ul
-        class="hidden md:flex flex-row md:w-full md:h-full justify-between gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]">
+        class="hidden sm:flex flex-row sm:w-full sm:h-full justify-between gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]">
         <li><a href="index.html">home</a></li>
         <li><a href="request-truck.html">solicitar caminhão</a></li>
         <li><a href="#services">serviços</a></li>
@@ -84,103 +84,102 @@
 
       </ul>
       <ul
-        class="flex md:hidden w-full h-full justify-center gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]">
-        <li class="menu-button">ver opções</li>
+        class="flex sm:hidden w-full h-full justify-between items-center text-white px-[30px]">
+        <li><img src="./assets/img/logo.png" alt="Logo Lokarsena" class="h-[25px] block " /></li>
+        <li><span class="material-icons menu-button text-[32px]">menu</span></li>
       </ul>
     </nav>
-    <section class="w-full h-[150px] absolute z-10 flex flex-row justify-between items-center p-[30px] lg:p-[75px]">
+    <section class="w-full h-auto absolute z-10 flex flex-row justify-between items-center py-[30px] sm:px-[30px] lg:px-[75px]">
 
-      <img src="./assets/img/logo.png" alt="Logo Lokarsena" class="h-[50px] lg:h-[75px]" />
+      <img src="./assets/img/logo.png" alt="Logo Lokarsena" class="h-[50px] lg:h-[75px] hidden sm:block" />
 
       <div class=" w-auto flex gap-[32px] text-white items-center justify-end">
         <a href="tel:+553132341070"
-          class="hidden lg:flex gap-[8px] text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button text-[16px] lg:text-[32px]">phone</span>(31) 3234-1070</a>
+          class="hidden sm:flex gap-[8px] text-[18px] font-bold flex-shrink-0 items-center"><span
+            class="material-icons menu-button text-[16px] lg:text-[18px]">phone</span>(31) 3234-1070</a>
         <a href="tel:+553134472600"
-          class="hidden lg:flex gap-[8px] text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button text-[32px]">phone</span> (31) 3447-2600 </a>
-        <span class="material-icons menu-button text-[32px]">menu</span>
+          class="hidden sm:flex gap-[8px] text-[18px] font-bold flex-shrink-0 items-center"><span
+            class="material-icons menu-button text-[18px]">phone</span> (31) 3447-2600 </a>
+        <span class="material-icons menu-button text-[18px] hidden sm:block">menu</span>
       </div>
     </section>
-
   </header>
+  
   <!-- main -->
   <main class="w-screen h-auto">
 
     <!-- Slider -->
-    <section class="swiper2 w-screen h-screen overflow-hidden bg-gray-500">
+    <section class="swiper2 w-screen aspect-[16/9] overflow-hidden bg-gray-500">
       <div class="swiper-wrapper">
-        <div
-          class="relative swiper-slide flex items-center justify-center h-screen bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide1.png')]">
-          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] md:p-[75px] flex items-center">
+  <div
+          class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide1.png')]">
+          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:p-[75px] flex items-center">
             <div
-              class="h-[50%] md:h-[75%] w-[50%] sm:w-[300px] border-[6px] border-[#F9CC23] border-r-0 flex flex-col justify-center pl-[5%] text-white gap-[16px]">
-              <h1 class="w-[250px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[24px] md:text-[48px]">solicite
+              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px] flex flex-col justify-center text-white gap-[16px] md:gap-[32px]">
+              <h1 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">solicite
                 já um caminhão pipa!</h1>
-              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium md:text-[24px]">Fale com a gente! Atendemos sua
+              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente! Atendemos sua
                 necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
                 estar bem perto de você!"</p>
-              <a class="w-[125px] md:w-[250px] h-[35px] md:h-[50px] border-[2px] border-[#FFFFFF] grid place-items-center capitalize font-semibold text-[#FFFFFF] md:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
                 href="#fale-conosco">fale conosco</a>
 
             </div>
           </article>
         </div>
         <div
-          class="relative swiper-slide flex items-center justify-center h-screen bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide2.png')]">
-          <div class="absolute inset-0 bg-[#203660]/50 z-10">
-            <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] md:p-[75px] flex items-center">
-              <div
-                class="h-[50%] md:h-[75%] w-[50%] sm:w-[300px] border-[6px] border-[#F9CC23] border-r-0 flex flex-col justify-center pl-[5%] text-white gap-[16px]">
-                <h1 class="w-[250px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[24px] md:text-[48px]">solicite
-                  já um caminhão pipa!</h1>
-                <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium md:text-[24px]">Fale com a gente! Atendemos
-                  sua necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
-                  estar bem perto de você!"</p>
-                <a class="w-[125px] md:w-[250px] h-[35px] md:h-[50px] border-[2px] border-[#FFFFFF] grid place-items-center capitalize font-semibold text-[#FFFFFF] md:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                  href="#fale-conosco">fale conosco</a>
+          class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide2.png')]">
+          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:p-[75px] flex items-center">
+            <div
+              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px]  flex flex-col justify-center text-white gap-[16px] md:gap-[32px]">
+              <h1 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">solicite
+                já um caminhão pipa!</h1>
+              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente! Atendemos sua
+                necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
+                estar bem perto de você!"</p>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="#fale-conosco">fale conosco</a>
 
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
         <div
-          class="relative swiper-slide flex items-center justify-center h-screen bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide3.png')]">
-          <div class="absolute inset-0 bg-[#203660]/50 z-10">
-            <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] md:p-[75px] flex items-center">
-              <div
-                class="h-[50%] md:h-[75%] w-[50%] sm:w-[300px] border-[6px] border-[#F9CC23] border-r-0 flex flex-col justify-center pl-[5%] text-white gap-[16px]">
-                <h1 class="w-[250px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[24px] md:text-[48px]">solicite
-                  já um caminhão pipa!</h1>
-                <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium md:text-[24px]">Fale com a gente! Atendemos
-                  sua necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
-                  estar bem perto de você!"</p>
-                <a class="w-[125px] md:w-[250px] h-[35px] md:h-[50px] border-[2px] border-[#FFFFFF] grid place-items-center capitalize font-semibold text-[#FFFFFF] md:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                  href="#fale-conosco">fale conosco</a>
+          class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide3.png')]">
+          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:p-[75px] flex items-center">
+            <div
+              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px]  flex flex-col justify-center text-white gap-[16px] md:gap-[32px]">
+              <h1 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">solicite
+                já um caminhão pipa!</h1>
+              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente! Atendemos sua
+                necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
+                estar bem perto de você!"</p>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="#fale-conosco">fale conosco</a>
 
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
         <div
-          class="relative swiper-slide flex items-center justify-center h-screen bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide4.png')]">
-          <div class="absolute inset-0 bg-[#203660]/50 z-10">
-            <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] md:p-[75px] flex items-center">
-              <div
-                class="h-[50%] md:h-[75%] w-[50%] sm:w-[300px] border-[6px] border-[#F9CC23] border-r-0 flex flex-col justify-center pl-[5%] text-white gap-[16px]">
-                <h1 class="w-[250px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[24px] md:text-[48px]">solicite
-                  já um caminhão pipa!</h1>
-                <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium md:text-[24px]">Fale com a gente! Atendemos
-                  sua necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
-                  estar bem perto de você!"</p>
-                <a class="w-[125px] md:w-[250px] h-[35px] md:h-[50px] border-[2px] border-[#FFFFFF] grid place-items-center capitalize font-semibold text-[#FFFFFF] md:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                  href="#fale-conosco">fale conosco</a>
+          class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide4.png')]">
+          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:p-[75px] flex items-center">
+            <div
+              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px]  flex flex-col justify-center text-white gap-[16px] md:gap-[32px]">
+              <h1 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">solicite
+                já um caminhão pipa!</h1>
+              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente! Atendemos sua
+                necessidade com agilidade e eficiência. Um caminhão Lokarsena pode
+                estar bem perto de você!"</p>
+                <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="#fale-conosco">fale conosco</a>
 
-              </div>
-            </article>
-          </div>
+
+            </div>
+          </article>
         </div>
-
+      
+        </div>
+       
+        </div>
       </div>
     </section>
     <section
@@ -355,7 +354,9 @@
     </section>
 
     <section id="services"
-      class="w-screen h-screen bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center px-[30px] lg:p-[75px] gap-[32px]">
+
+      class="w-screen h-auto bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center p-[30px] lg:p-[75px] gap-[32px]">
+
       <h1 class="font-semibold text-[20px] uppercase text-white md:text-[48px]">
         conheça nossos serviços
       </h1>
@@ -371,32 +372,26 @@
       <!-- Slider -->
       <section class="swiper w-[200px] h-[300px] md:w-[70%] md:h-[75%]">
         <div class="swiper-wrapper">
-          <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col ">
-            <img src="./assets/img/servico1.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Irrigação de plantas, jardins ou
+
+          <div class="swiper-slide items-center flex h-full min-h-[350px] bg-[#F1F0F0] rounded-lg flex flex-col ">
+            <img src="./assets/img/servico1.png" alt="" class="w-full h-auto" />
+            <figcaption class="w-full h-[75px] p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Irrigação de plantas, jardins ou
               canteiros</figcaption>
           </div>
-          <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col ">
-            <img src="./assets/img/servico2.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Limpeza de ruas e avenidas
+          <div class="swiper-slide items-center flex h-full min-h-[350px] bg-[#F1F0F0] rounded-lg flex flex-col">
+            <img src="./assets/img/servico2.png" alt="" class="w-full h-auto" />
+            <figcaption class="w-full h-[75px] p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Limpeza de ruas e avenidas
             </figcaption>
           </div>
-          <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col ">
-            <img src="./assets/img/servico3.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Abastecimento em níveis superiores
+          <div class="swiper-slide items-center flex h-full min-h-[350px] bg-[#F1F0F0] rounded-lg flex flex-col">
+            <img src="./assets/img/servico3.png" alt="" class="w-full h-auto" />
+            <figcaption class="w-full h-[75px] p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Abastecimento em níveis superiores
             </figcaption>
           </div>
-          <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col">
-            <img src="./assets/img/servico4.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Obras e construções</figcaption>
-          </div>
-          <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col">
-            <img src="./assets/img/servico4.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Abastecimento de piscinas</figcaption>
-          </div>
-          <div class="swiper-slide items-center flex h-full bg-[#F1F0F0] rounded-lg flex flex-col ">
-            <img src="./assets/img/servico4.png" alt="" class="w-full h-[75%]" />
-            <figcaption class="w-full p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Controle de emissão de poeira</figcaption>
+          <div class="swiper-slide items-center flex h-full min-h-[350px] bg-[#F1F0F0] rounded-lg flex flex-col">
+            <img src="./assets/img/servico4.png" alt="" class="w-full h-auto" />
+            <figcaption class="w-full h-[75px] p-[8px] lg:p-[16px] lg:text-[16px] font-medium">Obras e construções</figcaption>
+
           </div>
            </div>
 
@@ -531,9 +526,9 @@
   </main>
   <!-- footer -->
   <footer class="w-full h-[400px]">
-    <nav class="md:w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660] ">
+   <nav class="w-full h-[50px] bg-gradient-to-r from-[#3A9ADE] to-[#203660] ">
       <ul
-        class="hidden md:flex flex-row md:w-full md:h-full justify-between gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]">
+        class="hidden sm:flex flex-row sm:w-full sm:h-full justify-between gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]">
         <li><a href="index.html">home</a></li>
         <li><a href="request-truck.html">solicitar caminhão</a></li>
         <li><a href="#services">serviços</a></li>
@@ -541,10 +536,11 @@
         <li><a href="#enterprise">empresa</a></li>
         <li><a href="contacts.html">contato</a></li>
         <li><a href="faq.html">faq</a></li>
+
       </ul>
       <ul
-        class="flex md:hidden w-full h-full justify-center gap-[16px] items-center uppercase font-semibold text-white flex-wrap px-[75px]">
-        <li class="menu-button">ver opções</li>
+        class="flex sm:hidden w-full h-full justify-end items-center text-white px-[30px]">
+        <li><span class="material-icons menu-button text-[32px]">menu</span></li>
       </ul>
     </nav>
     <div class="lg:w-full lg:flex lg:flex-row lg:gap-[180px]">
@@ -621,46 +617,68 @@
   </div>
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const width = innerWidth;
-    const swiper = new Swiper(".swiper", {
-      slidesPerView: width <= 1024 ? 1 : 3,
-      spaceBetween: 20,
-      loop: true,
-      autoplay: {
-        delay: 8000,
-        disableOnInteraction: false,
+
+<script>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      768: {
+        slidesPerView: 2,
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      1024: {
+        slidesPerView: 2, 
       },
-    });
-    const swiper2 = new Swiper(".swiper2", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      autoplay: {
-        delay: 8000,
-        disableOnInteraction: false,
+      1280: {
+        slidesPerView: 3,
+      },
+    }
+  });
+
+  const swiper2 = new Swiper(".swiper2", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false,
+    },
+  });
+
+  const swiperClientes = new Swiper(".swiper-clientes", {
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
       }
-    });
-    const swiperClientes = new Swiper(".swiper-clientes", {
-      slidesPerView: width < 1024 ? 2 : 4,
-      spaceBetween: 0,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+    }
+  });
+</script>
 
-    });
-
-  </script>
 
 </body>
 
