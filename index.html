@@ -63,7 +63,7 @@
           </div>
         </li>
         </li>
-        <li class="flex flex-row w-full justify-between">
+        <li class="flex flex-col w-full gap-[6px]">
           <a class="text-[12px] text-[#203660] font-medium lg:text-[16px]" href="tel:+553132341070">(31) 3234-1070</a>
           <a class="text-[12px] text-[#203660] font-medium lg:text-[16px]" href="tel:+553134472600">(31) 3447-2600</a>
           <a class="text-[12px] text-[#203660] font-medium lg:text-[16px]" href="tel:+5531997375465">(31) 99737-5465</a>
@@ -477,7 +477,7 @@
       </div>
 
       <form class=" lg:w-[100%] flex flex-col gap-[16px] px-[30px] lg:px-[75px]" action="enviarEmail" method="post">
-        <div class="lg:flex lg:justify-center flex-row gap-[32px]">
+        <div class="hidden lg:flex lg:justify-center flex-row gap-[32px]">
           <div class="lg:w-[50%] flex flex-col gap-[15px]">
             <label class="text-[16px] text-white font-semibold" for="nome">
               Nome
@@ -497,6 +497,21 @@
           </div>
         </div>
 
+       
+            <label class="text-[16px] text-white font-semibold block lg:hidden" for="nome">
+              Nome
+            </label>
+            <input
+              class="w-full bg-transparent focus:outline-none border-0 border-white border-b-[2px]  text-white placeholder-[#FFFFFF80] placeholder:text-[15px] pb-[15px] block lg:hidden"
+              type="text" id="nome" name="nome" placeholder="Nome">
+        
+            <label class="text-[16px] text-white font-semibold block lg:hidden" for="telefone">
+              Telefone
+            </label>
+            <input
+              class="w-full bg-transparent focus:outline-none border-0 border-white border-b-[2px]  text-white placeholder-[#FFFFFF80] placeholder:text-[15px] pb-[15px] block lg:hidden"
+              type="text" id="telefone" name="nome" placeholder="Telefone">
+     
         <label class="text-[16px] text-white font-semibold" for="email">
           Email
         </label>
@@ -653,7 +668,7 @@
 
   const swiper2 = new Swiper(".swiper2", {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0,
     loop: true,
     autoplay: {
       delay: 8000,
