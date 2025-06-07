@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>home</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="shortcut icon" href="./assets/img/logo_fundo_branco.PNG.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/logo_fundo_branco.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,26 +26,25 @@
   <header class="relative">
     <nav class="menu-nav hidden flex-col fixed w-screen h-auto top[0] left-[0] bg-white z-20  px-[30px] lg:px-[75px]">
       <section class="w-full h-[75px] flex flex-row justify-between items-center border-b border-black/10">
-        <img src="./assets/img/logo_letras_pretas.PNG.png" alt="Logo Lokarsena" class="w-[50px]" />
+        <img src="./assets/img/logo_letras_pretas.png" alt="Logo Lokarsena" class="w-[50px]" />
         <span class="material-icons menu-button-close">close</span>
       </section>
       <ul
         class="w-full h-auto lg:h-[300px] grow text-black py-[30px] flex flex-col gap-[16px] lg:flex-wrap uppercase font-semibold ">
-        <li><a href="index.html" class="text-[16px]">home</a></li>
-        <li><a href="request-truck.html" class="text-[16px]">solicitar caminhão</a></li>
-        <li><a href="#services" class="text-[16px]">serviços</a></li>
-        <li><a href="fleet.html" class="text-[16px]">frota</a></li>
-        <li><a href="#enterprise" class="text-[16px]">empresa</a></li>
-        <li><a href="contacts.html" class="text-[16px]">contato</a></li>
-        <li><a href="faq.html" class="text-[16px]">faq</a></li>
-        <li><a
+        <li class="md:pr-[100px]"><a href="index.html" class="text-[16px]">home</a></li>
+        <li class="md:pr-[100px]"><a href="request-truck.html" class="text-[16px]">solicitar caminhão</a></li>
+        <li class="md:pr-[100px]"><a href="#services" class="text-[16px]">serviços</a></li>
+        <li class="md:pr-[100px]"><a href="fleet.html" class="text-[16px]">frota</a></li>
+        <li class="md:pr-[100px]"><a href="#enterprise" class="text-[16px]">empresa</a></li>
+        <li class="md:pr-[100px]"><a href="contacts.html" class="text-[16px]">contato</a></li>
+        <li class="md:pr-[100px]"><a href="faq.html" class="text-[16px]">faq</a></li>
+        <li class="md:pr-[100px]"><a
             href="https://www.google.com/maps/place/Lokarsena+loca%C3%A7oes+e+transportes+ltda/@-19.8590717,-44.0015244,17z/data=!4m6!3m5!1s0xa6972b5b4ce789:0x1055b1b695a92050!8m2!3d-19.858658!4d-44.000591!16s%2Fg%2F11gzqch5d?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank" rel="noopener noreferrer" class="text-[16px]">onde estamos</a></li>
         <li><a href="privacy_policy.html" class="text-[16px]">política de privacidade</a></li>
 
         <li>
           <div class="flex flex-row justify-between items-center lg:gap-[25px]">
-
             <span class="flex flex-row gap-[16px]">
               <a href="mailto:lokarsena@lokarsena.com.br">
                 <i class="fas fa-envelope text-[24px]"></i>
@@ -63,7 +62,7 @@
           </div>
         </li>
         </li>
-        <li class="flex flex-col w-full gap-[6px]">
+        <li class="flex flex-col w-auto gap-[6px]">
           <a class="text-[12px] font-medium lg:text-[16px]" href="tel:+553132341070">(31) 3234-1070</a>
           <a class="text-[12px] font-medium lg:text-[16px]" href="tel:+553134472600">(31) 3447-2600</a>
           <a class="text-[12px] font-medium lg:text-[16px]" href="tel:+5531997375465">(31) 99737-5465</a>
@@ -84,7 +83,7 @@
 
       </ul>
       <ul class="flex sm:hidden w-full h-full justify-between items-center text-white px-[30px]">
-        <li><img src="./assets/img/logo_letras_pretas.PNG.png" alt="Logo Lokarsena" class="h-[25px] block " /></li>
+        <li><img src="./assets/img/logo_letras_pretas.png" alt="Logo Lokarsena" class="h-[25px] block " /></li>
 
         <li><span class="material-icons menu-button text-[32px]">menu</span></li>
       </ul>
@@ -92,10 +91,11 @@
     <section
       class="w-full h-auto absolute z-10 flex flex-row justify-between items-center py-[30px] sm:px-[30px] lg:px-[75px]">
 
-      <img src="./assets/img/Group 135.png" alt="Logo Lokarsena" class="h-[80px] w-[120px] lg:h-[75px] hidden sm:block" />
+      <img src="./assets/img/logo_fundo_branco_quadrado.png" alt="Logo Lokarsena"
+        class="max-h-[100px] object-contain hidden sm:block" />
 
 
-          <span class="material-icons menu-button lg:text-[24px] hidden sm:block text-white">menu</span>
+      <span class="material-icons menu-button lg:text-[48px] hidden sm:block text-white">menu</span>
     </section>
   </header>
 
@@ -108,40 +108,40 @@
         <div
           class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/lokarsena_caminhao.png')]">
 
-          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col gap-[8px] justify-center">
-            <section class="sm:hidden w-full flex justify-between text-white">
+          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col justify-center">
+            <section class="sm:hidden w-full flex flex-col gap-[8px] text-white">
 
-              <a href="tel:+553132341070" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553132341070" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3234-1070</a>
-              <a href="tel:+553134472600" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553134472600" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3447-2600 </a>
-              <a href="tel:+5531997375465" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+5531997375465" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 99737-5465 </a>
               <span class="material-icons menu-button text-[32px] hidden sm:block">menu</span>
 
             </section>
             <div
-              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px] flex flex-col justify-center text-white gap-[16px] md:gap-[16px]">
+              class="h-full md:h-[50%] md:h-[75%] w-full flex flex-col justify-center text-white gap-[8px] md:gap-[16px]">
               <h1
                 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">
                 <a href="tel:+553132341070"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
-        <a href="tel:+553134472600"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
-        <a href="tel:+5531997375465"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
-              
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
+                <a href="tel:+553134472600"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
+                <a href="tel:+5531997375465"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
+
               </h1>
-              
-              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
+
+              <p class="w-[75%] md:w-[50%] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
                 Atendemos sua
                 necessidade com agilidade e eficiência. Um caminhão-pipa da Lokarsena pode
                 estar bem perto de você!</p>
-              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                href="#fale-conosco">fale conosco</a>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center uppercase font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="./request-truck.html">solicitar caminhão</a>
 
             </div>
           </article>
@@ -149,38 +149,40 @@
         <div
           class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide2_caminhao.png')]">
 
-          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col gap-[8px] justify-center">
-            <section class="sm:hidden w-full flex justify-between text-white">
+                  <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col justify-center">
+            <section class="sm:hidden w-full flex flex-col gap-[8px] text-white">
 
-              <a href="tel:+553132341070" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553132341070" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3234-1070</a>
-              <a href="tel:+553134472600" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553134472600" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3447-2600 </a>
-              <a href="tel:+5531997375465" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+5531997375465" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 99737-5465 </a>
               <span class="material-icons menu-button text-[32px] hidden sm:block">menu</span>
 
             </section>
             <div
-              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px] flex flex-col justify-center text-white gap-[16px] md:gap-[16px]">
+              class="h-full md:h-[50%] md:h-[75%] w-full flex flex-col justify-center text-white gap-[8px] md:gap-[16px]">
               <h1
                 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">
-                                <a href="tel:+553132341070"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
-        <a href="tel:+553134472600"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
-        <a href="tel:+5531997375465"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
+                <a href="tel:+553132341070"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
+                <a href="tel:+553134472600"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
+                <a href="tel:+5531997375465"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
+
               </h1>
-              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
+
+              <p class="w-[75%] md:w-[50%] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
                 Atendemos sua
                 necessidade com agilidade e eficiência. Um caminhão-pipa da Lokarsena pode
                 estar bem perto de você!</p>
-              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                href="#fale-conosco">fale conosco</a>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center uppercase font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="./request-truck.html">solicitar caminhão</a>
 
             </div>
           </article>
@@ -188,37 +190,40 @@
         <div
           class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/pipa.JPG')]">
 
-          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col gap-[8px] justify-center">
-            <section class="sm:hidden w-full flex justify-between text-white">
+                  <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col justify-center">
+            <section class="sm:hidden w-full flex flex-col gap-[8px] text-white">
 
-              <a href="tel:+553132341070" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553132341070" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3234-1070</a>
-              <a href="tel:+553134472600" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553134472600" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3447-2600 </a>
-              <a href="tel:+5531997375465" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+5531997375465" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 99737-5465 </a>
               <span class="material-icons menu-button text-[32px] hidden sm:block">menu</span>
 
             </section>
             <div
-              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px] flex flex-col justify-center text-white gap-[16px] md:gap-[16px]">
+              class="h-full md:h-[50%] md:h-[75%] w-full flex flex-col justify-center text-white gap-[8px] md:gap-[16px]">
               <h1
                 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">
-                                <a href="tel:+553132341070"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
-        <a href="tel:+553134472600"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
-        <a href="tel:+5531997375465"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a></h1>
-              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
+                <a href="tel:+553132341070"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
+                <a href="tel:+553134472600"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
+                <a href="tel:+5531997375465"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
+
+              </h1>
+
+              <p class="w-[75%] md:w-[50%] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
                 Atendemos sua
                 necessidade com agilidade e eficiência. Um caminhão-pipa da Lokarsena pode
                 estar bem perto de você!</p>
-              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                href="#fale-conosco">fale conosco</a>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center uppercase font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="./request-truck.html">solicitar caminhão</a>
 
             </div>
           </article>
@@ -226,35 +231,81 @@
         <div
           class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide4.png')]">
 
-          <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col gap-[8px] justify-center">
-            <section class="sm:hidden w-full flex justify-between text-white">
+             <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col justify-center">
+            <section class="sm:hidden w-full flex flex-col gap-[8px] text-white">
 
-              <a href="tel:+553132341070" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553132341070" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3234-1070</a>
-              <a href="tel:+553134472600" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+553134472600" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 3447-2600 </a>
-              <a href="tel:+5531997375465" class="flex gap-[8px] text-[12px] font-bold flex-shrink-0 items-center">(31)
+              <a href="tel:+5531997375465" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
                 99737-5465 </a>
               <span class="material-icons menu-button text-[32px] hidden sm:block">menu</span>
 
             </section>
             <div
-              class="h-full md:h-[50%] md:h-[75%] w-[50%] sm:w-[300px] flex flex-col justify-center text-white gap-[16px] md:gap-[16px]">
+              class="h-full md:h-[50%] md:h-[75%] w-full flex flex-col justify-center text-white gap-[8px] md:gap-[16px]">
               <h1
                 class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">
-                               <a href="tel:+553132341070"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
-        <a href="tel:+553134472600"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
-        <a href="tel:+5531997375465"
-          class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
-            class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a></h1>
-              <p class="w-[250px] md:w-[600px] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
-                Cuidamos da irrigação de suas plantas, jardins ou canteiros com agilidade e eficiência. Um caminhão Lokarsena pode estar bem perto de você!</p>
-              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center capitalize font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
-                href="#fale-conosco">fale conosco</a>
+                <a href="tel:+553132341070"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
+                <a href="tel:+553134472600"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
+                <a href="tel:+5531997375465"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
+
+              </h1>
+
+              <p class="w-[75%] md:w-[50%] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
+                Atendemos sua
+                necessidade com agilidade e eficiência. Um caminhão-pipa da Lokarsena pode
+                estar bem perto de você!</p>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center uppercase font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="./request-truck.html">solicitar caminhão</a>
+
+            </div>
+          </article>
+        </div>
+        <div
+          class="relative swiper-slide flex items-center justify-center h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/img/slide5.png')]">
+
+             <article class="absolute inset-0 bg-[#203660]/50 z-10 p-[30px] lg:px-[75px] flex flex-col justify-center">
+            <section class="sm:hidden w-full flex flex-col gap-[8px] text-white">
+
+              <a href="tel:+553132341070" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
+                3234-1070</a>
+              <a href="tel:+553134472600" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
+                3447-2600 </a>
+              <a href="tel:+5531997375465" class="flex text-[12px] font-bold flex-shrink-0 items-center">(31)
+                99737-5465 </a>
+              <span class="material-icons menu-button text-[32px] hidden sm:block">menu</span>
+
+            </section>
+            <div
+              class="h-full md:h-[50%] md:h-[75%] w-full flex flex-col justify-center text-white gap-[8px] md:gap-[16px]">
+              <h1
+                class="w-[200px] md:w-[600px] flex-shrink-0 font-bold uppercase text-[16px] md:text-[24px] lg:text-[48px]">
+                <a href="tel:+553132341070"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3234-1070</a>
+                <a href="tel:+553134472600"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 3447-2600 </a>
+                <a href="tel:+5531997375465"
+                  class="hidden sm:flex gap-[16px] lg:text-[32px] font-bold flex-shrink-0 items-center"><span
+                    class="material-icons menu-button lg:text-[32px]">phone</span>(31) 99737-5465 </a>
+
+              </h1>
+
+              <p class="w-[75%] md:w-[50%] flex-shrink-0 font-medium text-[12px] lg:text-[24px]">Fale com a gente!
+                Atendemos sua
+                necessidade com agilidade e eficiência. Um caminhão-pipa da Lokarsena pode
+                estar bem perto de você!</p>
+              <a class="w-[125px] lg:w-[250px] h-[35px] lg:h-[50px] border-[2px] border-[#FFFFFF] hidden sm:grid place-items-center uppercase font-semibold text-[#FFFFFF] lg:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]"
+                href="./request-truck.html">solicitar caminhão</a>
 
             </div>
           </article>
@@ -328,9 +379,9 @@
     </section>
 
 
-            <!-- Paginação -->
-        <div class="swiper-pagination"></div>
-      </section>
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+    </section>
     </section>
     <section id="banner"
       class="w-screen h-[200px] lg:h-[550px] bg-[url('./assets/img/banner.png')] bg-cover bg-center bg-no-repeat">
@@ -348,7 +399,7 @@
         <div class="hidden lg:flex lg:w-full h-auto lg:px-[30px] justify-end lg:pointer-events-auto">
 
           <a href="#enterprise"
-            class="w-[200px] lg:h-[50px] text-white uppercase border-[2px] border-white hover:border-[#F9CC23] hover:text-[#F9CC23] grid place-items-center">Saiba
+            class="w-[200px] lg:h-[50px] text-white uppercase border-[2px] border-white hover:border-[#F9CC23] hover:text-[#F9CC23] grid place-items-center md:text-[16px]">Saiba
             Mais</a>
 
         </div>
@@ -356,7 +407,7 @@
       </div>
     </section>
 
-     <section id="services"
+    <section id="services"
       class="w-screen h-auto bg-gradient-to-r from-[#203660] to-[#3A9ADE] flex flex-col justify-center items-center p-[30px] lg:p-[75px] gap-[32px]">
 
       <h1 class="font-semibold text-[20px] uppercase text-white md:text-[48px]">
@@ -401,22 +452,24 @@
           </div>
         </div>
         </div>
-     </section>
-     </section>
+      </section>
+    </section>
 
-      <section class="w-screen h-auto p-[30px] lg:p-[75px] bg-[#F5F5F5] flex flex-col gap-[32px]">
+    <section class="w-screen h-auto p-[30px] lg:p-[75px] bg-[#F5F5F5] flex flex-col gap-[32px]">
       <div class="flex flex-col gap-[16px]  ">
         <h1 class="text-[25px] lg:text-[40px] font-semibold">Valores da <span
             class="text-[#F9CC23] text-[25px] font-semibold lg:text-[36px]">Lokarsena</span></h1>
-        <p class="text-[14px] lg:w-[75%] font-normal lg:text-[18px] ">Na Lokarsena, oferecemos o serviço de transporte de água potável com caminhão-pipa, com flexibilidade, eficiência e agilidade. Atendemos Belo Horizonte e região, comprometidos com a segurança e a satisfação dos nossos clientes.</p>
+        <p class="text-[14px] lg:w-[75%] font-normal lg:text-[18px] ">Na Lokarsena, oferecemos o serviço de transporte
+          de água potável com caminhão-pipa, com flexibilidade, eficiência e agilidade. Atendemos Belo Horizonte e
+          região, comprometidos com a segurança e a satisfação dos nossos clientes.</p>
       </div>
 
-      <div class="flex flex-col gap-[64px] items-center py-[30px] lg:flex-wrap lg:justify-center lg:px-[75px]">
+      <div class="flex flex-col md:flex-row gap-[64px] items-center py-[30px] flex-wrap md:justify-center">
         <article
-          class="w-[300px] lg:w-[350px]  lg:h-[350px] aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
+          class="w-[300px] lg:w-[350px] lg:h-[350px] aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
           <div class="flex flex-col gap-[15px] text-center justify-center p-[35px]">
             <h2 class="text-[20px] lg:text-[24px] font-semibold">Flexibilidade</h2>
-            <p class="text-[13px] lg:text-[15px] font-normal">Entendemos que cada cliente tem uma necessidade
+            <p class="text-[10px] lg:text-[14px] font-normal">Entendemos que cada cliente tem uma necessidade
               específica. Por isso, oferecemos soluções personalizadas de abastecimento de água, adequadas ao seu tipo
               de demanda — seja para residências, empresas, obras ou situações emergenciais.</p>
           </div>
@@ -426,7 +479,7 @@
           class="w-[300px] lg:w-[350px] lg:h-[350px] aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
           <div class="flex flex-col gap-[15px] text-center justify-center p-[35px]">
             <h2 class="text-[20px] lg:text-[24px] font-semibold">Eficiência</h2>
-            <p class="text-[13px] lg:text-[15px] font-normal">Prezamos por um atendimento ágil, com logística bem
+            <p class="text-[10px] lg:text-[14px] font-normal">Prezamos por um atendimento ágil, com logística bem
               planejada e entregas rápidas de água potável tratada, sempre com controle de qualidade e segurança no
               processo.</p>
           </div>
@@ -436,35 +489,43 @@
           class="w-[300px] lg:w-[350px] lg:h-[350px]  aspect-square bg-white rounded-[5px] border-[#F9CC23] border-b-[4px]  shadow-xl/100">
           <div class="flex flex-col gap-[15px] text-center justify-center p-[35px]">
             <h2 class="text-[20px] lg:text-[24px] font-semibold">Agilidade</h2>
-            <p class="text-[13px] lg:text-[15px] font-normal">Na Lokarsena, a agilidade é fundamental para oferecer um transporte de água potável com caminhão-pipa eficiente e seguro. Nosso compromisso é garantir um atendimento ágil, com confiança e qualidade em cada serviço.</p>
+            <p class="text-[10px] lg:text-[14px] font-normal">Na Lokarsena, a agilidade é fundamental para oferecer um
+              transporte de água potável com caminhão-pipa eficiente e seguro. Nosso compromisso é garantir um
+              atendimento ágil, com confiança e qualidade em cada serviço.</p>
           </div>
         </article>
 
     </section>
 
-        <section id="clientes" class="w-full h-auto overflow-hidden grid place-items-center">
+    <section id="clientes" class="w-full h-auto overflow-hidden grid place-items-center">
       <div class="swiper-clientes w-screen py-[30px] box-border">
         <div class="swiper-wrapper ">
           <div class="swiper-slide">
-            <img class="w-[150px] h-[80px] mx-auto lg:max-w-[150px] lg:max-h-[75px]"
-              src="./assets/img/MINASGOV-150x75.png" alt="Minas Gerais" />
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/minasgov.png" alt="Minas Gerais" />
           </div>
           <div class="swiper-slide">
-            <img class="w-[150px] h-[80px] mx-auto lg:max-w-[150px] lg:max-h-[75px]"
-              src="./assets/img/ANGLOAMERICAN-150x75.png" alt="Anglo American" />
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/angloamerica.png" alt="Anglo American" />
           </div>
           <div class="swiper-slide">
-            <img class="w-[150px] h-[80px] mx-auto lg:max-w-[150px] lg:max-h-[75px]" src="./assets/img/VALE-150x75.png"
-              alt="Vale" />
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/vale.png" alt="Vale" />
           </div>
           <div class="swiper-slide">
-            <img class="w-[150px] h-[80px] mx-auto lg:max-w-[150px] lg:max-h-[75px]" src="./assets/img/GLOBO-150x75.png"
-              alt="Globo" />
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/globo.png" alt="Globo" />
           </div>
           <div class="swiper-slide">
-            <img class="w-[150px] h-[80px] mx-auto lg:max-w-[150px] lg:max-h-[75px]" src="./assets/img/DIRECIONAL.png"
-              alt="Direcional" />
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/direcional.png" alt="Direcional" />
           </div>
+          <div class="swiper-slide">
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/arcelor.png" alt="ArcelorMittal" />
+          </div>
+          <div class="swiper-slide">
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/leroymerlin.png" alt="Leroy Merlin" />
+          </div>
+          <div class="swiper-slide">
+            <img class="max-h-[80px] mx-auto object-contain" src="./assets/img/minasshopping.png"
+              alt="Minas Shopping" />
+          </div>
+
         </div>
       </div>
     </section>
@@ -491,12 +552,12 @@
               Nossos serviços são ideais para quem busca <strong
                 class="text-[14px]  font-semibold lg:text-[16px]">agilidade, economia de tempo e
                 tranquilidade</strong> na gestão
-                de
-                recursos hídricos.  Realizamos o reabastecimento de caixas d’água em prédios de até 30
+              de
+              recursos hídricos. Realizamos o reabastecimento de caixas d’água em prédios de até 30
               andares, casas, condomínios e piscinas.
             </p>
             <p class="text-[14px] lg:text-[16px]">
-             A Lokarsena é a solução ideal para
+              A Lokarsena é a solução ideal para
               emergências de falta de água ou manutenções na rede hidráulica.
               Atendemos prontamente moradores e empresas que necessitam de
               abastecimento imediato com água potável em <strong class="text-[14px] font-semibold lg:text-[16px]">BH,
@@ -510,15 +571,16 @@
             Faltou água? <strong class="text-[14px] font-semibold lg:text-[16px]">Chame
               a Lokarsena!</strong><br><br>
             Estamos prontos para atender sua necessidade com agilidade e
-            eficiência. Entre em contato e solicite um orçamento para o<strong class="text-[14px] font-semibold lg:text-[16px]">
-            transporte de água potável com caminhão-pipa em Belo Horizonte e
-            região.</strong>
+            eficiência. Entre em contato e solicite um orçamento para o<strong
+              class="text-[14px] font-semibold lg:text-[16px]">
+              transporte de água potável com caminhão-pipa em Belo Horizonte e
+              região.</strong>
           </p>
         </div>
 
         <div class="w-full h-auto p-[20px flex justify-end cursor-pointer lg:justify-start">
           <a href="https://www.google.com/maps/place/Lokarsena+loca%C3%A7oes+e+transportes+ltda/@-19.8590717,-44.0015244,17z/data=!4m6!3m5!1s0xa6972b5b4ce789:0x1055b1b695a92050!8m2!3d-19.858658!4d-44.000591!16s%2Fg%2F11gzqch5d?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank" class="w-[170px] h-[50px] bg-[#203660] text-white grid place-items-center">Nossa Sede</a>
+            target="_blank" class="w-[170px] h-[50px] bg-[#203660] text-white grid place-items-center capitalize">nossa sede</a>
         </div>
 
       </section>
@@ -545,7 +607,7 @@
     </nav>
     <div class="lg:w-full lg:flex lg:flex-row lg:gap-[180px]">
       <div class="flex flex-col gap-[10px] px-[30px] pt-[30px] pb-[10px] lg:w-[50%] lg:px-[75px]">
-        <img src="./assets/img/logo_letras_pretas.PNG.png"
+        <img src="./assets/img/logo_letras_pretas.png"
           alt="Logo Lokarsena - Especialista no transporte de água potavél com caminhão pipa em BH e região metropolitana"
           class="w-[75px]">
 
@@ -554,9 +616,8 @@
             com caminhão pipa em BH e região metropolitana</strong>. Levamos água onde e quando você precisar, de forma
           ágil e segura. Faltou água? Chame a Lokarsena!</p>
 
-        <a href="#fale-conosco"
-          class="w-[125px] md:w-[250px] h-[35px] md:h-[50px] border-[2px] border-[#203660] grid place-items-center capitalize font-semibold text-[#203660] md:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]">Fale
-          Conosco</a>
+        <a href="./request-truck.html"
+          class="w-[125px] md:w-[250px] h-[35px] md:h-[50px] border-[2px] border-[#203660] grid place-items-center uppercase font-semibold text-[#203660] md:text-[16px] hover:border-[#F9CC23] hover:text-[#F9CC23]">solicitar caminhão</a>
 
       </div>
       <address class="flex flex-col gap-[5px] px-[30px] not-italic lg:w-[50%] lg:pt-[30px] lg:px-[0]">
@@ -582,7 +643,7 @@
 
       <div class="lg:flex flex-row gap-[10px] justify-between items-center">
         <span class="hidden lg:block flex flex-row gap-[10px] py-[30px]">
-           <a class="px-[10px]" href="privacy_policy.html">Política de Privacidade</a> 
+          <a class="px-[10px]" href="privacy_policy.html">Política de Privacidade</a>
           <a class="lg:border-x-2 lg:border-[#F9CC23] px-[10px]" href="index.html#enterprise">Nossa História</a>
           <a class="px-[10px]" href="index.html#services">Nossos Serviços</a>
         </span>
@@ -625,14 +686,6 @@
       autoplay: {
         delay: 8000,
         disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
       },
       breakpoints: {
         0: {
